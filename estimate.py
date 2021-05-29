@@ -3,9 +3,9 @@ import unittest
 import random
 
 def wallis(n):
-    sum = 0
+    sum = 1
     for i in range(1,n+1):
-        sum += (4*(i**2))/((4*(i**2))-1)
+        sum *= (4*(i**2))/((4*(i**2))-1)
     return sum*2
 
 
